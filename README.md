@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=15C3D6&labelColor=000000">
+  <img alt="License" src="https://img.shields.io/github/license/gustavopresoti/tuntschallenge">
 </p>
 
 <br />
@@ -57,7 +57,7 @@ At the first time running the application you will need to authenticate the appl
 
 ## 📝 License
 
-This project is licensed under the MIT license. See the file [LICENSE](LICENSE.md) for more details.
+This project is licensed under the GPL-3.0 license. See the file [LICENSE](LICENSE.md) for more details.
 
 <br />
 
