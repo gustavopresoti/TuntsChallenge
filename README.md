@@ -1,6 +1,4 @@
-## <center>**Spreadsheet Grades Control**
-
----
+<h1 align="center"><strong>Spreadsheet Grades Control</strong></h1>
 
 <p align="center">
   <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -13,7 +11,7 @@
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=15C3D6&labelColor=000000">
 </p>
 
----
+<br />
 
 ## 🔧 Technologies
 
@@ -53,7 +51,7 @@ npm start
 
 ## ❗ **Important**
 
-At the first time running the application you will need to authenticate the application using a Google account. Just follow the steps in the terminal and this proccess will be done. You don't need to run the application after that, this will happen automatically.
+At the first time running the application you will need to authenticate the application using a Google account. Just follow the steps in the terminal and this proccess will be done. You need to run the application after that.
 
 <br />
 
