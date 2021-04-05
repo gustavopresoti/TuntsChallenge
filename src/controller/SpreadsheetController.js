@@ -1,6 +1,6 @@
 import { google } from 'googleapis';
 
-const spreadsheetId = '1p6W5sUPsATNeFcqWoMKqt3tNa1u24waJCggrsgQeeYk';
+const spreadsheetId = process.env.SPREADSHEET_ID;
 
 function updateSpreadsheet(auth) {
   const sheets = google.sheets({ version: 'v4', auth });

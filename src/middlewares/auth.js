@@ -1,15 +1,16 @@
 import fs from 'fs';
 import readline from 'readline';
 import { google } from 'googleapis';
+import open from 'open';
 
 const SCOPES = ['https://www.googleapis.com/auth/spreadsheets'];
 const TOKEN_PATH = 'src/config/token.json';
 
-// fs.readFile(TOKEN_PATH, (err, content) => {
-//   if (err) return console.log('Error loading client secret file:', err);
+fs.readFile(TOKEN_PATH, (err, content) => {
+  if (err) return console.log('Error loading client secret file:', err);
 
-//   authorize(JSON.parse(content), updateSpreadsheet);
-// });
+  authorize(JSON.parse(content), updateSpreadsheet);
+});
 
 function authorize(credentials, callback) {
   const { client_secret, client_id, redirect_uris } = credentials.installed;
@@ -35,12 +36,13 @@ function getNewToken(oAuth2Client, callback) {
     scope: SCOPES,
   });
 
-  console.log('Authorize this app by visiting this url:', authUrl);
-
   const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
   });
+
+  console.log('Redirecting to authorize app url...');
+  (await open(authUrl))();
 
   rl.question('Enter the code from that page here: ', (code) => {
     rl.close();

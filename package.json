@@ -12,7 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "@types/node": "^14.14.32",
-    "googleapis": "^39.2.0"
+    "googleapis": "^39.2.0",
+    "open": "^8.0.2"
   },
   "type": "module"
 }
